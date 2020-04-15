@@ -3,9 +3,9 @@
 import program from 'commander';
 import pkg from '../../package.json';
 
-console.log('Versions:');
+console.log(' Versions: ');
 console.log(` user-agent: ${process.env.npm_config_user_agent}`);
-console.log(` packing: ${pkg.version}`);
+console.log(` packing: ${pkg.version}, ${process.argv}`);
 
 program
   .command('serve', 'start dev web server')
